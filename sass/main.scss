@@ -1,0 +1,34 @@
+@import './utils/variables';
+@import './utils/add-normalize';
+@import './utils/mixin';
+@import './utils/placeholder';
+
+@import './components/section-container.scss';
+@import './components/fonts';
+@import './components/fonts';
+@import './components/logo';
+
+@import './components/big-button';
+@import './components/menu-toggle';
+@import './components/modal';
+@import './components/webpages';
+
+@import './header/start-header';
+@import './header/mob-menu';
+// @import './header/mob-container';
+
+@import './header/nav-head';
+@import './header/contacts-head';
+
+@import './main/hero';
+@import './main/nuances';
+@import './main/production';
+@import './main/team';
+@import './main/clients';
+
+@import './main/footer';
+
+@import './portfolio/filter';
+@import './portfolio/portfolio';
+
+// @import './main/nuanses';

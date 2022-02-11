@@ -1,0 +1,68 @@
+﻿ctrl+shift+P
+
+
+
+Live Sass: Watch Sass
+
+
+-------------------------------------
+Для настройки форматирования:
+features formatter
+
+
+_____________________________________
+
+Используйте либо дескриптор W, либо тег picture с дескриптором Х. У вас на макете на разных устройствах разные размеры картинок. Тут просто Х не подойдет
+-----------------------------------------
+
+
+Ще один робочий варіант ментор на додатковому занаятті показав 
+
+(() => {
+  const menuBtnRef = document.querySelector('.my-class1');
+  const mobileMenuRef = document.querySelector('.my-class2');
+  const menuContainerRef = document.querySelector('.menu-container');
+  console.log(menuBtnRef);
+  mobileMenuRef.addEventListener('click', () => {
+    menuContainerRef.classList.toggle('is-open');
+  });
+  menuBtnRef.addEventListener('click', () => {
+    console.log(222);
+    menuContainerRef.classList.toggle('is-open');
+  });
+})();
+
+======================================================
+
+Marina:плюшевый_медведь:  9 д. назад
+
+
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+  // закрытие мобильного меню на более широких экранах в случае изменения ориентации  устройства
+  // window.matchMedia('(min-width: 600px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
+
+  =======================================
+https://medium.com/@dan.postnov/%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%BD%D0%B0-javascript-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BA%D0%BE%D0%B4%D0%B0-dbbb599649f3
+  ========================================

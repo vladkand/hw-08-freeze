@@ -1,0 +1,46 @@
+// ! ==== ЗАГОЛОВКИ СБРОС отступов
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  // background-color: var(--bg-prime-color);
+  background-color: antiquewhite;
+  color: var(--text-prime-color);
+}
+
+// ! ===== РИСУНКИ В INLINE-BLOCK
+img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+// ! ===== УДАЛЕНЫ МАРКЕРЫ ДЛЯ ВСЕХ СПИСКОВ
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// ! ===== PADDING для ВСЕХ INPUT
+input {
+  padding: 0;
+}
+
+// ! ===== УДАЛЕНЫ ПОДЧЕРКИВАНИЕ ССЫЛОК
+.link {
+  text-decoration: none;
+}

@@ -1,0 +1,39 @@
+// body {
+//   min-width: 320px;
+// }
+.section {
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 93px 0;
+  }
+}
+
+.section-thin {
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @include desktop {
+    padding-top: 93px;
+    padding-bottom: 0;
+  }
+}
+
+.container {
+  // width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include tel {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
+}
